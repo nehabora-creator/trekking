@@ -1,0 +1,24 @@
+/* Custom styles. Tailwind classes come from the Tailwind CDN script. */
+.noscroll{
+  scrollbar-width:none;-ms-overflow-style:none}
+.noscroll::-webkit-scrollbar{
+  display:none}
+:root{
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{
+  scroll-behavior:smooth;scroll-padding-top:72px}
+:focus-visible{
+  outline:3px solid #f23640;outline-offset:2px}
+.slide{
+  transition:opacity .8s}
+@media(prefers-reduced-motion:reduce){
+  .slide{
+  transition:none}
+html{
+  scroll-behavior:auto}
+}
+
+.gslide{transition:opacity .6s}
+@media(prefers-reduced-motion:reduce){.gslide{transition:none}}
+html,body{max-width:100%;overflow-x:clip}
+img{max-width:100%}
